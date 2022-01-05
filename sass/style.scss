@@ -1,0 +1,66 @@
+@import "base";
+@import "header";
+@import "carousel";
+@import "portfolio";
+@import "hire";
+@import "award";
+@import "footer";
+@import "backtotop";
+
+@media screen and (max-width: 991.9px) {
+  .header .navbar-brand {
+    font-size: 30px;
+  }
+  .navbar-nav {
+    background-color: #ffffff;
+  }
+  .navbar-nav .nav-link {
+    color: #35a22c !important;
+    padding: 0.5rem 1rem;
+    margin: 0 !important;
+    transition: all 0.4s linear;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: #35a22c;
+    color: #ffffff !important;
+  }
+  .navbar-toggler {
+    background-color: #35a22c !important;
+    border: none;
+    outline: none;
+  }
+  .border {
+    border: none !important;
+  }
+  .carousel-caption h5 {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .carousel-caption p {
+    font-size: 10px;
+  }
+  .portfolio .portfolio-card {
+    --column: 2;
+  }
+
+  .header .nav-link:hover::after {
+    width: 0%;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .portfolio .portfolio-header {
+    padding: 40px 60px;
+  }
+
+  .portfolio-main .nav-pills .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .portfolio .portfolio-card {
+    --column: 1;
+  }
+}

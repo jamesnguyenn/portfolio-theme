@@ -1,0 +1,39 @@
+/* __header */
+body .header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.header .navbar-brand {
+  font-size: 35px;
+}
+
+.header .nav-link {
+  position: relative;
+  transition: all 0.3s linear;
+}
+.header .active {
+  color: #35a22c !important;
+}
+.header .nav-link:hover {
+  color: #35a22c !important;
+}
+
+.header .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #35a22c;
+  transition: all 0.5s linear;
+}
+
+.header .nav-link:hover::after {
+  width: 100%;
+}

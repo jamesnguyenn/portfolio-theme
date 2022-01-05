@@ -1,0 +1,21 @@
+/* __back-to-top*/
+.back-to-top {
+  font-size: 20px;
+  color: #ffffff;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(97, 97, 97, 0.25);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.back-to-top:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #000000;
+}

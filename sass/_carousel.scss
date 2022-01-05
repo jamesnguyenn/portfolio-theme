@@ -1,0 +1,68 @@
+/* __carousel */
+.carousel-item {
+  position: relative;
+  height: 100vh;
+  transition: all 0.8s linear;
+}
+
+.carousel-item:first-child {
+  background-image: url(../image/finland.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url(../image/mountains.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url(../image/mountains-1.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 120px;
+}
+.carousel-indicators .active {
+  background-color: #35a22c;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-caption img {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  object-fit: cover;
+  animation-delay: 0.5s;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  line-height: 65px;
+  animation-delay: 1s;
+}
+
+.carousel-caption p {
+  animation-delay: 1.5s;
+}
+
+.overlay {
+  background: rgba(39, 43, 54, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

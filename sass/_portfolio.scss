@@ -1,0 +1,93 @@
+/* __portfolio */
+.portfolio .portfolio-header {
+  text-align: center;
+  padding: 100px 180px 40px 180px;
+}
+
+.portfolio .portfolio-main {
+  text-align: center;
+  padding-bottom: 95px;
+}
+
+.portfolio-main .nav-pills {
+  justify-content: center;
+}
+
+.portfolio-main .nav-link {
+  color: #1a1d2d;
+  border: 1px solid #1a1d2d;
+  margin: 0 5px;
+  transition: all 0.2s linear;
+}
+.portfolio .portfolio-cards {
+  --spacing: 20px;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  margin-left: var(--spacing);
+}
+.portfolio .portfolio-card {
+  --column: 3;
+  width: calc((100% / var(--column)) - 20px);
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio .portfolio-card .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .portfolio-card .item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio .portfolio-card .item-image {
+  height: 300px;
+  flex-shrink: 0;
+}
+.portfolio .portfolio-card .item-content {
+  padding: 1.25rem;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 0 0 1rem 1rem;
+  transition: all 0.5s linear;
+  flex: 1;
+}
+.portfolio .portfolio-card .item-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  height: 3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: all 0.5s linear;
+}
+
+.portfolio .portfolio-card:hover .item-title {
+  color: #35a22c;
+}
+
+.portfolio .portfolio-card:hover .item-content {
+  border-color: #35a22c;
+  border-top-color: transparent;
+}
+
+.portfolio .portfolio-card .item-text {
+  color: #585858;
+  flex: 1;
+}
+
+.portfolio-main .nav-pills .active {
+  background-color: #35a22c;
+  color: #fff;
+  border-color: #35a22c;
+}

@@ -1,0 +1,33 @@
+.footer {
+  padding: 3rem 0 !important;
+  background-color: #222222;
+}
+
+.footer-main a {
+  width: 50px;
+  margin-right: 10px;
+  color: #aaa;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.footer-main i {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  border: 1px solid #454545;
+  transition: all 0.5s;
+}
+
+.footer-main i:hover {
+  color: #35a22c;
+  border-color: #35a22c;
+}
+.footer-main hr {
+  color: #aaa;
+}
+
+.footer-main p {
+  color: #aaa;
+  margin-top: 30px;
+}

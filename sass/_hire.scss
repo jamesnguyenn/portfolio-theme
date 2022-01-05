@@ -1,0 +1,54 @@
+/* __hire*/
+.hire {
+  background: url(../image/3.jpg), rgba(39, 43, 54, 0.801);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 120px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hire-header {
+  padding: 100px 190px;
+}
+
+.hire-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.hire-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.hire-item:hover {
+  border-color: #ffffff;
+  background-color: #000000;
+}
+.item-image i {
+  font-size: 48px;
+  color: #35a22c;
+  margin-bottom: 35px;
+}
+.item-title {
+  margin-bottom: 35px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+.item-text {
+  font-size: 16px;
+  line-height: 24px;
+}
